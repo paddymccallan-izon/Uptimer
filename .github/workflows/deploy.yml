@@ -124,8 +124,8 @@ jobs:
 
           prefix="${UPTIMER_PREFIX:-$default_slug}"
           worker_name="${UPTIMER_WORKER_NAME:-$prefix}"
-          pages_project="${UPTIMER_PAGES_PROJECT:-$prefix}"
-          d1_name="${UPTIMER_D1_NAME:-$prefix}"
+          pages_project="${UPTIMER_PAGES_PROJECT:-$prefix-web}"
+          d1_name="${UPTIMER_D1_NAME:-$prefix-db}"
           d1_binding="${UPTIMER_D1_BINDING:-DB}"
 
           echo "WORKER_NAME=$worker_name" >> "$GITHUB_ENV"
